@@ -1,0 +1,152 @@
+* {
+  margin: auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  background-image: url(".img/#1@1X.png");
+  background-size: cover;
+  position: relative;
+  height: 1024px;
+}
+
+.header {
+  position: relative;
+  height: 850px;
+  background-color: rgb(35, 35, 46);
+}
+
+.title {
+  position: relative;
+  top: 45%;
+  /* transform: translateX(-50%); */
+  text-align: center;
+  color: rgba(255, 255, 255, 255);
+}
+
+.main-title {
+  position: relative;
+  top: -40px;
+  font-family: SegoeUI-Bold;
+  font-size: 80pt;
+  text-transform: uppercase;
+  animation-name: moveRight;
+  animation-duration: 4s;
+  animation-fill-mode: backwards;
+  transition-timing-function: ease-in-out;
+}
+
+.sub-title {
+  font-family: SegoeUI;
+  font-size: 18pt;
+}
+
+.sub-title:hover {
+  transform: scale(3) translateY(-140%);
+  transition-duration: 3s;
+}
+
+.logo {
+  height: 134px;
+  position: absolute;
+  top: 10%; left: 50%;
+  transform: translateX(-50%);
+}
+
+.foot {
+  position: absolute;
+  height: 48px;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.intro {
+  /* overflow: hidden; */
+  width: 100%;
+  padding: 0px 18%;
+  display: flex;
+  flex-flow: column wrap;
+  position: relative;
+  top: 10%;
+  font-family: SegoeUI;
+  font-size: 30pt;
+  text-align: center;
+}
+
+.intro p {
+  padding: 3%;
+}
+
+.submain {
+  width: 100%;
+  /* height: 512px; */
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 7%;
+  padding: 0px 18%;
+  /* transform: translateX(-50%); */
+}
+
+.titleL {
+  /* position: absolute;
+  top: 20%; left: 50%;
+  transform: translateX(-50%); */
+  /* padding: 20px; */
+  display: flex;
+  font-family: SegoeUI-Bold;
+  font-size: 80pt;
+  color: rgba(70, 75, 79, 255);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.h3 {
+  padding: 10px 0;
+  font-family: SegoeUI-Bold;
+  font-size: 18pt;
+  color: rgba(70, 75, 79, 255);
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.template p, .brand p, .dreams p {
+  font-family: SegoeUI;
+  font-size: 18pt;
+}
+
+.template, .brand, .dreams {
+  padding: 1%;
+  margin: 0;
+}
+
+.skills {
+  /* position: absolute;
+  top: 50%; left: 50%;
+  transform: translateX(-50%); */
+  display: flex;
+}
+
+@font-face {
+  font-family: SegoeUI-Bold;
+  src: url('SegoeUI/SegoeUI-Bold.ttf');
+}
+
+@font-face {
+  font-family: SegoeUI;
+  src: url('SegoeUI/SegoeUI.ttf');
+}
+
+@keyframes moveRight {
+  0% {
+    transform: translateX(-1500px);
+  }
+  50% {
+    transform: translateX(500px);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
